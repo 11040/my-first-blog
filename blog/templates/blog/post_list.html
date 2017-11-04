@@ -3,20 +3,22 @@
   <head>
     <title>Blogi</title>
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bg.css' %}">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marck+Script">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
   <header><h1>Blogin otsikko</h1>
 <h3>Alaotsikko</h3>
   </header>
 <div>
-    <p class="hr"></p>
+    <p class="hr"> </p>
   {% for post in posts %}
   <div class="main">
     <h2>{{ post.title }}</h2>
-    <small>{{ post.published_date }}</small>
+    <p><small>{{ post.published_date }}</small></p>
   </div>
   <div>
       <p class="postaus">{{ post.text|linebreaksbr }}</p>
