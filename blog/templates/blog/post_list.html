@@ -5,20 +5,21 @@
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
   </head>
   <body>
   <header><h1>Hei kaikki!</h1></header>
-    <div class="left">
-    {% for post in posts %}
-    <div>
-        <p>Julkaistu: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+<div>
+    <p class="postaus"><br /></p>
+  {% for post in posts %}
+  <div class="main">
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p class="small">{{ post.published_date }}</p>
+  </div>
+  <div>
+      <p class="postaus">{{ post.text|linebreaksbr }}</p>
+  </div>
 {% endfor %}
-</div>
-<div class="right">
-<p><b>00/00/0000</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac libero a velit convallis sodales. Aliquam viverra ullamcorper cursus. Etiam commodo sapien nibh, ac molestie nibh pharetra molestie. Donec congue ante quis dolor blandit pulvinar. Aenean sit amet ex sodales dolor interdum ullamcorper sed eu velit. Aliquam porta arcu quis purus laoreet, sed cursus enim vehicula. Cras ipsum dui, porta in accumsan ut, sagittis eget nunc. Etiam a tortor consectetur, congue nibh id, facilisis elit. Quisque dictum molestie nulla sed euismod. Duis accumsan, nunc non malesuada commodo, nunc massa tempor ex, at rhoncus urna mauris vel sapien. Vivamus ligula justo, consectetur ac diam eu, congue cursus dolor. Aenean a nisl tempor, maximus elit sit amet, posuere tellus. Aliquam egestas libero non venenatis gravida. Nunc vehicula, risus ut aliquam facilisis, sem diam sollicitudin nulla, sed mollis augue dolor sit amet nunc.</p>
 </div>
 <div class="ala">&copy; 11040</div>
   </body>
