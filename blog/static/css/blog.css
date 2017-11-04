@@ -3,6 +3,7 @@ background: url(http://ginevran.altervista.org/u/the-mid-autumn-festival-2867084
 text-align: justify;
 margin: 5px;
 font-family: times new roman;
+font-size: 11pt;
 }
 header{
   background-color: rgba(255,255,255,0.2);
@@ -11,13 +12,16 @@ header{
 	text-shadow: 0px 0px 1px #F5D083, 1px 1px 2px #F5D083;
   color: #900101;
   text-align: center;
+  font-family: 'Marck Script', cursive;
 }
 .main{
   background-color: rgba(255,255,255,0.2);
 	padding: 20px 10px;
 	margin: 0;
 	padding-left: 10%;
+  color: #F5D083;
 	text-shadow: 0px 0px 1px #900101, 1px 1px 2px #900101;
+  font-family: 'Marck Script', cursive;
 }
 .postaus{
   background: rgba(255,255,255,1);
@@ -27,7 +31,7 @@ header{
 	margin: 0;
 }
 .small{
-  font-size: small;
+  font-size: 8pt;
   color: #F5D083;
 }
 .left{
@@ -41,21 +45,26 @@ float: left;
 background: #ffffff;
 width: 100%
 }
-h1{
-  color: #900101;
-  size: 50px;
-  font-family: 'Marck Script', cursive;
-}
-h2{
-  color: #900101;
-  font-family: 'Marck Script', cursive;
-}
+
 h3{
   text-transform: lowercase;
-  color: #900101;
-  font-family: times new roman;
+  font-size: 35px;
 }
+
 a{
-  color: #900101;
-  text-decoration: none;
+color: #421c52;
+text-decoration: none;
+font-variant: small-caps;
+font-size: 11pt;
+text-shadow: 0px 0px 1px #fcf4e7;
+}
+a:hover{
+color: #fcf4e7;
+font-variant: small-caps;
+text-decoration: underline;
+text-shadow: none;
+}
+a:visited{
+color: #9c8aa5;
+text-shadow: none;
 }
