@@ -4,13 +4,14 @@ text-align: justify;
 margin: 5px;
 }
 header{
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(245,208,131,0.2);
 	padding: 20px 10px;
 	margin: 0;
 	text-shadow: 0px 0px 1px #FF9610, 1px 1px 2px #FF9610;
   color: #900101;
   text-align: center;
   font-family: 'Marck Script', cursive;
+
 }
 .main{
   background-color: rgba(245,208,131,0.2);
@@ -20,6 +21,11 @@ header{
   color: #F5D083;
 	text-shadow: 0px 0px 1px #900101, 1px 1px 2px #900101;
   font-family: 'Marck Script', cursive;
+}
+.hr{
+  background: #F5D083;
+  line-height: 0.1;
+	box-sizing: border-box;
 }
 .postaus{
   background: #F5D083;
@@ -38,7 +44,10 @@ float: left;
 background: #F5D083;
 width: 100%
 }
-
+h1{
+  font-size: 65px;
+}
 h3{
   text-transform: lowercase;
+  font-size: 35px;
 }
