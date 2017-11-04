@@ -1,6 +1,11 @@
 body{
-    background: url(http://ginevran.altervista.org/u/back.jpg) no-repeat center center cover fixed;
-    text-align: justify;
+  background-image: url(http://ginevran.altervista.org/u/back.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#000000;
+  text-align: justify;
     margin: 5px;
 }
 header{
@@ -36,7 +41,7 @@ header{
 small{
     font-size: 10pt;
     color: #F5D083;
-    font-family: Times New Roman !important;
+    font-family: Times New Roman;
     margin-left: 30px;
 }
 .ala{
