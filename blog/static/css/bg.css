@@ -1,0 +1,13 @@
+body{
+  background-image: url(http://ginevran.altervista.org/u/back.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#000000;
+}
+@media only screen and (max-width: 767px){
+  body{
+    background-image: url(http://ginevran.altervista.org/u/mobile-back.jpg);
+  }
+}
