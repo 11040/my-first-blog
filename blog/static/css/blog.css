@@ -1,0 +1,30 @@
+body{
+background: #e6ffff;
+text-align: justify;
+font-variant: small-caps;
+padding: 10px;
+}
+header{
+  font-family: Lobster;
+  font-variant: italic;
+  text-align: center;
+  border-bottom: 2px dashed #000000;
+}
+.left{
+  width: 75%;
+  padding-right: 5px;
+  float: left;
+  border-right: 2px dashed #000000;
+}
+.right{
+  width: 25%;
+  padding-left: 5px;
+  float: right;
+  height: 100%;
+}
+.ala{
+text-align: center;
+border-top: 2px dashed #000000;
+width: 100%;
+float: left;
+}
