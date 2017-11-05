@@ -4,6 +4,7 @@
     <title>Blogi</title>
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <link rel="stylesheet" href="{% static 'css/bg.css' %}">
+    <link rel="stylesheet" href="{% static 'js/scroll.js' %}">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marck+Script">
@@ -13,17 +14,18 @@
   <header><h1>Blogin otsikko</h1>
 <h3>Alaotsikko</h3>
   </header>
-<div>
-    <p class="hr"> </p>
-  {% for post in posts %}
-  <div class="main">
-    <h2>{{ post.title }}</h2>
-    <p><small>{{ post.published_date }}</small></p>
-  </div>
-  <div>
-      <p class="postaus">{{ post.text|linebreaksbr }}</p>
-  </div>
-{% endfor %}
+      <p class="hr"> </p>
+  <div class="left" id="scroll"><div class="x">
+    {% for post in posts %}
+      <div class="potsikko"><h2>{{ post.title }}</h2> <p><small>{{ post.published_date }}</small></p></div>
+      <div><p class="postaus">{{ post.text|linebreaksbr }}</p></div>
+    {% endfor %}
+  </div></div>
+<div class="right">
+  <h2>Otsikko</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eros elit, sodales sed dui ac, blandit ornare elit. Pellentesque porta malesuada nibh, eget tempor ex pharetra sit amet. Vestibulum turpis urna, facilisis eu luctus ac, convallis consectetur nulla. Curabitur lacinia purus vel quam finibus interdum. Fusce molestie at velit ut placerat. Sed eu tortor mauris. Donec et libero vitae magna fringilla dapibus. Aenean eleifend, lectus quis congue consequat, tortor neque fringilla dui, non laoreet risus lectus id lacus. Ut finibus, tortor nec mattis dapibus, urna ipsum rhoncus massa, vitae dictum orci mauris vitae purus. Aliquam egestas turpis at erat volutpat accumsan eget vel nulla. Morbi sed aliquet velit, id lacinia nunc. Vestibulum a sem dolor. Etiam ut risus ante. Nulla in hendrerit quam. Integer rutrum mauris vel lorem aliquam ultricies. Suspendisse velit tellus, cursus a nibh a, commodo bibendum odio.</p>
+
+    <p>Maecenas dictum enim sit amet maximus gravida. In ultrices porttitor ligula at dictum. Suspendisse faucibus efficitur ornare. Quisque facilisis ultrices nulla, ac suscipit ex. Praesent nec nulla at felis porta aliquet. Maecenas ac lacus mauris. Cras id fringilla arcu. Curabitur non risus eget felis egestas fermentum a fringilla mauris. Ut scelerisque eros justo, ac varius metus efficitur ut.</p>
 </div>
 <div class="ala">&copy; 11040</div>
   </body>
